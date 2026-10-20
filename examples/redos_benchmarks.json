@@ -1,0 +1,18 @@
+{
+  "name": "ReDoS Backtracking Vulnerabilities Benchmark",
+  "pattern": "^(a+)+$",
+  "tests": [
+    {
+      "name": "quick match short input",
+      "input": "aaaaaaaaaa",
+      "should_match": true,
+      "max_ms": 5.0
+    },
+    {
+      "name": "failing match with poison suffix",
+      "input": "aaaaaaaaaaaaaaaaaaaa!",
+      "should_match": false,
+      "timeout_sec": 0.5
+    }
+  ]
+}

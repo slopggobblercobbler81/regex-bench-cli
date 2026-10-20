@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regex-bench-cli"
+version = "0.1.0"
+description = "A terminal CLI utility to test regular expressions against multiple test cases, evaluate catastrophic backtracking risks, and output formatted match captures."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "slopggobblercobbler81" }
+]
+keywords = [
+    "regex",
+    "regular-expressions",
+    "redos",
+    "backtracking",
+    "benchmark",
+    "profiling",
+    "security",
+    "cli"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Security",
+    "Topic :: Utilities"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "flake8>=6.0",
+    "black>=23.0"
+]
+
+[project.scripts]
+regex-bench = "regex_bench.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/slopggobblercobbler81/regex-bench-cli"
+Repository = "https://github.com/slopggobblercobbler81/regex-bench-cli"
+Issues = "https://github.com/slopggobblercobbler81/regex-bench-cli/issues"
